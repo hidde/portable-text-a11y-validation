@@ -1,7 +1,8 @@
 const genericLinkNames = [
   'click here',
   'read more',
-  'here'
+  'here',
+  'learn more'
 ];
 
 export const avoidGenericLinkText = blocks => {
