@@ -4,7 +4,7 @@ export const noFakeLists = blocks => {
       block._type === 'block' &&
       block.children.some(blockPart =>
         blockPart._type === 'span' &&
-        blockPart.text.includes('\n-')
+        blockPart.text.match(/\n\s*[-*+–—]/)
       )
   ).map(
     (block, index) => [{_key: block._key}] || [index]
